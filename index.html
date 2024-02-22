@@ -3,35 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="./script.js" defer></script>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  <div class="container">
+    <div class="inputUser">
+      <div class="inputBox">
+        <span>DAY</span>
+        <input type="text" name="day" id="day" placeholder="DD">
+      </div>
+      <div class="inputBox">
+        <span>MONTH</span>
+        <input type="text" name="month" id="month" placeholder="MM">
+      </div>
+      <div class="inputBox">
+        <span>YEAR</span>
+        <input type="text" name="year" id="year" placeholder="YYYY">
+      </div>
+    </div>
+    <div class="error" id="errorContainer"></div>
+    <div class="line"></div>
+    <button id="button">
+      <img src="assets/images/icon-arrow.svg" alt="icon" class="icon">
+    </button>
+    <div class="results">
+      <div class="result">
+        <span id="yearResult" class="resultNumber">--</span>
+        <h1 class="resultText">years</h1>
+      </div>
+      <div class="result">
+        <span id="monthResult" class="resultNumber">--</span>
+        <h1 class="resultText">months</h1>
+      </div>
+      <div class="result">
+        <span id="dayResult" class="resultNumber">--</span>
+        <h1 class="resultText">days</h1>
+      </div>
+    </div>
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div> -->
 </body>
 </html>
