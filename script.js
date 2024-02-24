@@ -84,7 +84,7 @@ const handlePressButton = () => {
     yearInput.style.border = "1px solid rgba(128, 128, 128, 0.301)"
 
     if (month < 1 || month > 12) {
-        displayError("O mês deve ser maior que 1 e menor que 12")
+        displayError("O mês deve ser entre 1 e 12")
 
         dayResult.textContent = "--";
         monthResult.textContent = "--";

@@ -92,6 +92,7 @@ button {
     display: flex;
     align-items: center;
     font-style: italic;
+    gap: 15px;
 }
 
 .resultNumber {
@@ -112,16 +113,16 @@ button {
     top: 120px;
 }
 
-@media (max-width: 650px) { 
+@media (max-width: 650px) {
     .container {
         width: 270px;
         height: 400px;
         padding: 70px 25px;
-    } 
+    }
 
     .inputUser {
-       gap: 15px;
-       justify-content: center;
+        gap: 15px;
+        justify-content: center;
     }
 
     input {
@@ -133,9 +134,9 @@ button {
         margin-top: 110px;
     }
 
-    .resultNumber, 
+    .resultNumber,
     .resultText {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .line {
@@ -152,5 +153,27 @@ button {
         top: 10px;
         left: 0;
         text-align: center;
+    }
+
+    .resultNumber,
+    .resultText {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        width: 200px;
+        height: 400px;
+        padding: 70px 25px;
+    }
+
+    .results {
+        margin-top: 130px;
+    }
+
+    .resultNumber,
+    .resultText {
+        font-size: 35px;
     }
 }
